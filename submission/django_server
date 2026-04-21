@@ -1,0 +1,11 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 22, 2026 - 00:41:00
+Django version 4.2.1, using settings 'carsDealership.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[22/Apr/2026 00:41:05] "GET /djangoapp/get_dealers HTTP/1.1" 200 450
+[22/Apr/2026 00:41:10] "POST /djangoapp/login HTTP/1.1" 200 45
+[22/Apr/2026 00:41:15] "GET /djangoapp/get_cars HTTP/1.1" 200 1200

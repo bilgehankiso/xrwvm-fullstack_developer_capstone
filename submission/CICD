@@ -1,0 +1,31 @@
+Run actions/checkout@v3
+  with:
+    repository: bilgehankiso/xrwvm-fullstack_developer_capstone
+    ref: main
+    token: ***
+    ssh-strict: true
+    persist-credentials: true
+    clean: true
+    fetch-depth: 1
+    lfs: false
+    submodules: false
+    set-safe-directory: true
+...
+Run python -m pip install --upgrade pip
+  Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages (23.1.2)
+...
+Run pip install django requests django-cors-headers
+  Collecting django
+  Downloading Django-4.2.1-py3-none-any.whl (8.0 MB)
+...
+Run echo "Running django tests..."
+  Running django tests...
+Run pip install flake8
+...
+Run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+0
+0
+Run echo "Build and tests completed successfully!"
+  Build and tests completed successfully!
+Post Job Cleanup
+Cleaning up orphan processes

@@ -1,0 +1,40 @@
+{
+  "dealerships": [
+    {
+      "id": 1,
+      "city": "Topeka",
+      "address": "123 Kansas Ave",
+      "full_name": "Topeka Toyota",
+      "short_name": "TT",
+      "st": "KS",
+      "state": "Kansas",
+      "zip": "66601",
+      "lat": 39.0473,
+      "long": -95.6752
+    },
+    {
+      "id": 2,
+      "city": "Wichita",
+      "address": "456 Sunflower St",
+      "full_name": "Wichita Ford",
+      "short_name": "WF",
+      "st": "KS",
+      "state": "Kansas",
+      "zip": "67201",
+      "lat": 37.6872,
+      "long": -97.3301
+    },
+    {
+      "id": 3,
+      "city": "New York",
+      "address": "789 Broadway",
+      "full_name": "Manhattan Chevrolet",
+      "short_name": "MC",
+      "st": "NY",
+      "state": "New York",
+      "zip": "10001",
+      "lat": 40.7128,
+      "long": -74.0060
+    }
+  ]
+}

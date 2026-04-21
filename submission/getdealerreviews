@@ -1,0 +1,29 @@
+curl -X GET http://localhost:8000/djangoapp/reviews/dealer/1
+
+Output:
+[
+  {
+    "id": 1,
+    "dealership": 1,
+    "name": "John Doe",
+    "purchase": true,
+    "review": "Great experience buying my Camry here!",
+    "purchase_date": "2023-05-15",
+    "car_make": "Toyota",
+    "car_model": "Camry",
+    "car_year": 2022,
+    "sentiment": "positive"
+  },
+  {
+    "id": 2,
+    "dealership": 1,
+    "name": "Jane Smith",
+    "purchase": false,
+    "review": "Nice staff, but took a long time to get assistance.",
+    "purchase_date": null,
+    "car_make": "Toyota",
+    "car_model": "RAV4",
+    "car_year": 2023,
+    "sentiment": "neutral"
+  }
+]

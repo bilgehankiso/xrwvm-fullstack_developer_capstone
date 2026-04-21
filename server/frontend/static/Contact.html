@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cars Dealership</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --gold: #f5a623;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+        }
+        .navbar {
+            background: rgba(255,255,255,0.05) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-brand { color: var(--gold) !important; font-weight: 700; font-size: 1.5rem; }
+        .nav-link { color: rgba(255,255,255,0.8) !important; }
+        .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+        .hero-section {
+            background: linear-gradient(135deg, #0f3460 0%, #e94560 100%);
+            padding: 80px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .hero-section h1 { font-size: 3rem; font-weight: 800; }
+        .contact-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            height: 100%;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 30px rgba(245,166,35,0.15);
+        }
+        .contact-card .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent), var(--gold));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(5px);
+        }
+        .form-control, .form-select {
+            background: rgba(255,255,255,0.08) !important;
+            border: 1px solid rgba(255,255,255,0.15) !important;
+            color: #fff !important;
+            border-radius: 10px;
+        }
+        .form-control::placeholder { color: rgba(255,255,255,0.4) !important; }
+        .form-control:focus, .form-select:focus {
+            box-shadow: 0 0 0 3px rgba(245,166,35,0.3) !important;
+            border-color: var(--gold) !important;
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, var(--accent), var(--gold));
+            border: none;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245,166,35,0.4);
+            color: #fff;
+        }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        footer {
+            background: rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <i class="fas fa-car me-2"></i>Cars Dealership
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/contact/">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section mb-5">
+    <div class="container">
+        <h1 class="mb-3">Contact Us</h1>
+        <p class="lead">We're here to help you find your perfect vehicle</p>
+    </div>
+</div>
+
+<!-- Contact Info Cards -->
+<div class="container mb-5">
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="contact-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                </div>
+                <h5>Headquarters</h5>
+                <p class="text-muted-light">1234 Auto Boulevard<br>Detroit, Michigan 48201<br>United States</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="contact-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-phone text-white"></i>
+                </div>
+                <h5>Phone Numbers</h5>
+                <p>Main: <strong>+1 (800) 555-CARS</strong></p>
+                <p>Sales: <strong>+1 (800) 555-SALE</strong></p>
+                <p>Support: <strong>+1 (800) 555-HELP</strong></p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="contact-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h5>Email Addresses</h5>
+                <p>General: <strong>info@carsdealership.com</strong></p>
+                <p>Sales: <strong>sales@carsdealership.com</strong></p>
+                <p>Support: <strong>support@carsdealership.com</strong></p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="contact-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-clock text-white"></i>
+                </div>
+                <h5>Business Hours</h5>
+                <p>Mon - Fri: <strong>8:00 AM - 8:00 PM</strong></p>
+                <p>Saturday: <strong>9:00 AM - 6:00 PM</strong></p>
+                <p>Sunday: <strong>10:00 AM - 4:00 PM</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form & Map -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="contact-form">
+                <h3 class="mb-4" style="color: var(--gold);">Send Us a Message</h3>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="John Doe" id="contactName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="john@example.com" id="contactEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" id="contactPhone">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <select class="form-select" id="contactSubject">
+                            <option value="">Select a subject</option>
+                            <option>Vehicle Inquiry</option>
+                            <option>Test Drive Request</option>
+                            <option>Service & Maintenance</option>
+                            <option>Financing Options</option>
+                            <option>General Question</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="How can we help you?" id="contactMessage"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold w-100" id="sendMessageBtn">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="map-container mb-4" style="height: 400px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.906234498208!2d-83.04580058481!3d42.33143997918971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d3ec1e1a5db%3A0xc0e265e5a2b19e52!2sDetroit%2C%20MI%2C%20USA!5e0!3m2!1sen!2s!4v1625000000000!5m2!1sen!2s"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <!-- Social Media -->
+            <div class="contact-card">
+                <h5 class="mb-3">Follow Us</h5>
+                <div class="d-flex gap-3">
+                    <a href="#" class="btn btn-outline-light rounded-circle" style="width:45px;height:45px;display:flex;align-items:center;justify-content:center;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle" style="width:45px;height:45px;display:flex;align-items:center;justify-content:center;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle" style="width:45px;height:45px;display:flex;align-items:center;justify-content:center;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle" style="width:45px;height:45px;display:flex;align-items:center;justify-content:center;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle" style="width:45px;height:45px;display:flex;align-items:center;justify-content:center;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Cars Dealership. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
