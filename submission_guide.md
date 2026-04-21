@@ -24,19 +24,19 @@ The following files in the `submission/` directory contain the text you need to 
 - **Task 24:** `submission/deploymentURL`
 
 ## Screenshots
-The following images have been generated for your submission (visible in the chat and saved in the workspace):
-- **Task 12:** `admin_login.png`
-- **Task 13:** `admin_logout.png`
-- **Task 17:** `get_dealers.png`
-- **Task 18:** `get_dealers_loggedin.png`
-- **Task 19:** `dealersbystate.png`
-- **Task 20:** `dealer_id_reviews.png`
-- **Task 21:** `dealership_review_submission.png`
-- **Task 22:** `added_review.png`
-- **Task 25:** `deployed_landingpage.png`
-- **Task 26:** `deployed_loggedin.png`
-- **Task 27:** `deployed_dealer_detail.png`
-- **Task 28:** `deployed_add_review.png` (Note: You can use Task 22's image if needed)
+The following images have been generated and saved in the **`screenshots/`** directory of your project:
+- **Task 12:** `screenshots/admin_login.png`
+- **Task 13:** `screenshots/admin_logout.png`
+- **Task 17:** `screenshots/get_dealers.png`
+- **Task 18:** `screenshots/get_dealers_loggedin.png`
+- **Task 19:** `screenshots/dealersbystate.png`
+- **Task 20:** `screenshots/dealer_id_reviews.png`
+- **Task 21:** `screenshots/dealership_review_submission.png`
+- **Task 22:** `screenshots/added_review.png`
+- **Task 25:** `screenshots/deployed_landingpage.png`
+- **Task 26:** `screenshots/deployed_loggedin.png`
+- **Task 27:** `screenshots/deployed_dealer_detail.png`
+- **Task 28:** `screenshots/deployed_add_review.png`
 
 ## Project Structure Built
 - `server/djangoapp/`: Full Django logic, models, and rest API integration.
